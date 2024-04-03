@@ -89,6 +89,10 @@ return require('packer').startup(function(use)
     use ('averms/black-nvim')
 
 
+    -- Autoclosing brackets
+    use ('windwp/nvim-ts-autotag')
+
+
     -- Debugging
     use {
         'rcarriga/nvim-dap-ui',
