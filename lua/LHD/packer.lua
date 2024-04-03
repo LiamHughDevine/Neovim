@@ -119,10 +119,6 @@ return require('packer').startup(function(use)
     use ('ldelossa/nvim-dap-projects')
 
 
-    -- JS automplete
-    use ('neoclide/coc.nvim') -- may need to do :call coc#util#install()
-
-
     -- Undo tree
     use ('mbbill/undotree')
     -- Git Integration

@@ -12,5 +12,3 @@ stuff for it
 - sudo apt-get install build-essential
 
 - go into lua/LHD and do :so :PackerSync
-
-- May also need to do :CocInstall coc-pairs and other things?
