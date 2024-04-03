@@ -109,6 +109,11 @@ _G.packer_plugins = {
     path = "/home/liam/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["formatter.nvim"] = {
+    loaded = true,
+    path = "/home/liam/.local/share/nvim/site/pack/packer/start/formatter.nvim",
+    url = "https://github.com/mhartington/formatter.nvim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/liam/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -228,7 +233,7 @@ _G.packer_plugins = {
     url = "https://github.com/simrat39/symbols-outline.nvim"
   },
   ["tabline.nvim"] = {
-    config = { "\27LJ\2\n \4\0\0\5\0\r\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\5\0005\4\4\0=\4\6\0035\4\a\0=\4\b\3=\3\t\2B\0\2\0016\0\n\0009\0\v\0'\2\f\0B\0\2\1K\0\1\0¥\1            set guioptions-=e \" Use showtabline in gui vim\n            set sessionoptions+=tabpages,globals \" store tabpages and globals in session\n            \bcmd\bvim\foptions\25component_separators\1\3\0\0\bî‚±\bî‚³\23section_separators\1\0\n\18modified_icon\a+ \19show_tabs_only\1\23show_filename_only\1\20modified_italic\1\15show_bufnr\1\18show_devicons\2\23section_separators\0\21show_tabs_always\1\25component_separators\0\27max_bufferline_percent\3B\1\3\0\0\bî‚°\bî‚²\1\0\2\venable\2\foptions\0\nsetup\ftabline\frequire\0" },
+    config = { "\27LJ\2\n \4\0\0\5\0\r\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\5\0005\4\4\0=\4\6\0035\4\a\0=\4\b\3=\3\t\2B\0\2\0016\0\n\0009\0\v\0'\2\f\0B\0\2\1K\0\1\0¥\1            set guioptions-=e \" Use showtabline in gui vim\n            set sessionoptions+=tabpages,globals \" store tabpages and globals in session\n            \bcmd\bvim\foptions\25component_separators\1\3\0\0\bî‚±\bî‚³\23section_separators\1\0\n\23show_filename_only\1\20modified_italic\1\15show_bufnr\1\18show_devicons\2\21show_tabs_always\1\27max_bufferline_percent\3B\18modified_icon\a+ \19show_tabs_only\1\23section_separators\0\25component_separators\0\1\3\0\0\bî‚°\bî‚²\1\0\2\venable\2\foptions\0\nsetup\ftabline\frequire\0" },
     loaded = true,
     path = "/home/liam/.local/share/nvim/site/pack/packer/start/tabline.nvim",
     url = "https://github.com/kdheepak/tabline.nvim"
@@ -251,18 +256,18 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: nvim-dap-ui
-time([[Config for nvim-dap-ui]], true)
-try_loadstring("\27LJ\2\n\30\0\0\2\1\1\0\4-\0\0\0009\0\0\0B\0\1\1K\0\1\0\1À\topen\31\0\0\2\1\1\0\4-\0\0\0009\0\0\0B\0\1\1K\0\1\0\1À\nclose\31\0\0\2\1\1\0\4-\0\0\0009\0\0\0B\0\1\1K\0\1\0\1À\ncloseÚ\1\1\0\4\0\14\0\0256\0\0\0'\2\1\0B\0\2\0026\1\0\0'\3\2\0B\1\2\0029\2\3\1B\2\1\0019\2\4\0009\2\5\0029\2\6\0023\3\b\0=\3\a\0029\2\4\0009\2\t\0029\2\n\0023\3\v\0=\3\a\0029\2\4\0009\2\t\0029\2\f\0023\3\r\0=\3\a\0022\0\0€K\0\1\0\0\17event_exited\0\21event_terminated\vbefore\0\17dapui_config\22event_initialized\nafter\14listeners\nsetup\ndapui\bdap\frequire\0", "config", "nvim-dap-ui")
-time([[Config for nvim-dap-ui]], false)
 -- Config for: tabline.nvim
 time([[Config for tabline.nvim]], true)
-try_loadstring("\27LJ\2\n \4\0\0\5\0\r\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\5\0005\4\4\0=\4\6\0035\4\a\0=\4\b\3=\3\t\2B\0\2\0016\0\n\0009\0\v\0'\2\f\0B\0\2\1K\0\1\0¥\1            set guioptions-=e \" Use showtabline in gui vim\n            set sessionoptions+=tabpages,globals \" store tabpages and globals in session\n            \bcmd\bvim\foptions\25component_separators\1\3\0\0\bî‚±\bî‚³\23section_separators\1\0\n\18modified_icon\a+ \19show_tabs_only\1\23show_filename_only\1\20modified_italic\1\15show_bufnr\1\18show_devicons\2\23section_separators\0\21show_tabs_always\1\25component_separators\0\27max_bufferline_percent\3B\1\3\0\0\bî‚°\bî‚²\1\0\2\venable\2\foptions\0\nsetup\ftabline\frequire\0", "config", "tabline.nvim")
+try_loadstring("\27LJ\2\n \4\0\0\5\0\r\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\5\0005\4\4\0=\4\6\0035\4\a\0=\4\b\3=\3\t\2B\0\2\0016\0\n\0009\0\v\0'\2\f\0B\0\2\1K\0\1\0¥\1            set guioptions-=e \" Use showtabline in gui vim\n            set sessionoptions+=tabpages,globals \" store tabpages and globals in session\n            \bcmd\bvim\foptions\25component_separators\1\3\0\0\bî‚±\bî‚³\23section_separators\1\0\n\23show_filename_only\1\20modified_italic\1\15show_bufnr\1\18show_devicons\2\21show_tabs_always\1\27max_bufferline_percent\3B\18modified_icon\a+ \19show_tabs_only\1\23section_separators\0\25component_separators\0\1\3\0\0\bî‚°\bî‚²\1\0\2\venable\2\foptions\0\nsetup\ftabline\frequire\0", "config", "tabline.nvim")
 time([[Config for tabline.nvim]], false)
 -- Config for: nord
 time([[Config for nord]], true)
 try_loadstring("\27LJ\2\n4\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\21colorscheme nord\bcmd\bvim\0", "config", "nord")
 time([[Config for nord]], false)
+-- Config for: nvim-dap-ui
+time([[Config for nvim-dap-ui]], true)
+try_loadstring("\27LJ\2\n\30\0\0\2\1\1\0\4-\0\0\0009\0\0\0B\0\1\1K\0\1\0\1À\topen\31\0\0\2\1\1\0\4-\0\0\0009\0\0\0B\0\1\1K\0\1\0\1À\nclose\31\0\0\2\1\1\0\4-\0\0\0009\0\0\0B\0\1\1K\0\1\0\1À\ncloseÚ\1\1\0\4\0\14\0\0256\0\0\0'\2\1\0B\0\2\0026\1\0\0'\3\2\0B\1\2\0029\2\3\1B\2\1\0019\2\4\0009\2\5\0029\2\6\0023\3\b\0=\3\a\0029\2\4\0009\2\t\0029\2\n\0023\3\v\0=\3\a\0029\2\4\0009\2\t\0029\2\f\0023\3\r\0=\3\a\0022\0\0€K\0\1\0\0\17event_exited\0\21event_terminated\vbefore\0\17dapui_config\22event_initialized\nafter\14listeners\nsetup\ndapui\bdap\frequire\0", "config", "nvim-dap-ui")
+time([[Config for nvim-dap-ui]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

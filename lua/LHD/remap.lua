@@ -22,10 +22,10 @@ end)--]]
 vim.keymap.set("x", "<leader>p", [["_dP]])
 
 -- next greatest remap ever : asbjornHaland
-vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
+vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 
-vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
+vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 
 -- This is going to get me cancelled
 -- vim.keymap.set("i", "<C-c>", "<Esc>")
@@ -59,6 +59,9 @@ vim.keymap.set("n", "G", "G$")
 vim.keymap.set("v", "G", "G$")
 vim.keymap.set("n", "<leader>fp", "<cmd>call Black()<cr>")
 vim.keymap.set("n", "<leader>db", "<cmd>DapToggleBreakpoint<cr>")
-vim.keymap.set("n", "<leader>dpr", function ()
+vim.keymap.set("n", "<leader>dpr", function()
     require('dap-python').test_method()
 end)
+
+-- Formatting
+vim.keymap.set("n", "<leader>f", "<cmd>Format<cr>")

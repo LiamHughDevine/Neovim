@@ -89,8 +89,9 @@ return require('packer').startup(function(use)
     use ('averms/black-nvim')
 
 
-    -- Autoclosing brackets
+    -- Formatting
     use ('windwp/nvim-ts-autotag')
+    use ('mhartington/formatter.nvim')
 
 
     -- Debugging

@@ -1,4 +1,5 @@
 node_modules/
 nvim/
+plugin/packer_compiled.lua
 package.json
 package-lock.json
