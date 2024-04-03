@@ -42,19 +42,17 @@ require("formatter").setup({
         javascript = {
             require("formatter.filetypes.javascriptreact").prettier,
 
-            --[[function()
+            function()
                 return {
                     exe = "prettier",
                     args = {
-                        "--search-parent-directories",
                         "--stdin-filepath",
                         util.escape_path(util.get_current_buffer_file_path()),
-                        "--",
-                        "-",
+                        "--tab-width=4"
                     },
                     stdin = true,
                 }
-            end,]]--
+            end,
         },
 
 		-- Use the special "*" filetype for defining formatter configurations on
