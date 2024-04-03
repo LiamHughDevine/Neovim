@@ -90,8 +90,12 @@ return require('packer').startup(function(use)
 
 
     -- Formatting
-    use ('windwp/nvim-ts-autotag')
     use ('mhartington/formatter.nvim')
+
+
+    -- Auto close Brackets
+    use ('windwp/nvim-ts-autotag')
+    use ('m4xshen/autoclose.nvim')
 
 
     -- Debugging
