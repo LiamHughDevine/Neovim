@@ -1,0 +1,4 @@
+node_modules/
+nvim/
+package.json
+package-lock.json
