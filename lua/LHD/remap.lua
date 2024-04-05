@@ -43,11 +43,11 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")--]]
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
-vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/.dotfiles/nvim/.config/nvim/lua/theprimeagen/packer.lua<CR>");
-vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>");
+vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/.dotfiles/nvim/.config/nvim/lua/theprimeagen/packer.lua<CR>")
+vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>")
 
 vim.keymap.set("n", "<leader><leader>", function()
-    vim.cmd("so")
+	vim.cmd("so")
 end)
 
 -- My personal keymaps
@@ -57,10 +57,10 @@ vim.keymap.set("n", "gg", "gg0")
 vim.keymap.set("v", "gg", "gg0")
 vim.keymap.set("n", "G", "G$")
 vim.keymap.set("v", "G", "G$")
-vim.keymap.set("n", "<leader>fp", "<cmd>call Black()<cr>")
+-- vim.keymap.set("n", "<leader>fp", "<cmd>call Black()<cr>")
 vim.keymap.set("n", "<leader>db", "<cmd>DapToggleBreakpoint<cr>")
 vim.keymap.set("n", "<leader>dpr", function()
-    require('dap-python').test_method()
+	require("dap-python").test_method()
 end)
 
 -- Formatting

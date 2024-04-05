@@ -39,21 +39,35 @@ require("formatter").setup({
 			end,
 		},
 
-        javascript = {
-            require("formatter.filetypes.javascriptreact").prettier,
+		javascript = {
+			require("formatter.filetypes.javascriptreact").prettier,
 
-            function()
-                return {
-                    exe = "prettier",
-                    args = {
-                        "--stdin-filepath",
-                        util.escape_path(util.get_current_buffer_file_path()),
-                        "--tab-width=4"
-                    },
-                    stdin = true,
-                }
-            end,
-        },
+			function()
+				return {
+					exe = "prettier",
+					args = {
+						"--stdin-filepath",
+						util.escape_path(util.get_current_buffer_file_path()),
+						"--tab-width=4",
+					},
+					stdin = true,
+				}
+			end,
+		},
+
+		python = {
+			require("formatter.filetypes.python").black,
+
+			function()
+				return {
+					exe = "black",
+					args = {
+						util.escape_path(util.get_current_buffer_file_path()),
+					},
+					stdin = true,
+				}
+			end,
+		},
 
 		-- Use the special "*" filetype for defining formatter configurations on
 		-- any filetype
