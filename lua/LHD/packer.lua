@@ -48,6 +48,7 @@ return require("packer").startup(function(use)
 		requires = { { "hoob3rt/lualine.nvim", opt = true }, { "nvim-tree/nvim-web-devicons", opt = true } },
 	})
 	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
+    use("nvim-treesitter/nvim-treesitter-context")
 	use("ChristianChiarulli/neovim-codicons")
 	use("nvimtools/none-ls.nvim")
 
