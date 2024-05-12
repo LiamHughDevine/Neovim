@@ -48,7 +48,7 @@ return require("packer").startup(function(use)
 		requires = { { "hoob3rt/lualine.nvim", opt = true }, { "nvim-tree/nvim-web-devicons", opt = true } },
 	})
 	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
-    use("nvim-treesitter/nvim-treesitter-context")
+	use("nvim-treesitter/nvim-treesitter-context")
 	use("ChristianChiarulli/neovim-codicons")
 	use("nvimtools/none-ls.nvim")
 
@@ -124,6 +124,16 @@ return require("packer").startup(function(use)
 	use("mbbill/undotree")
 	-- Git Integration
 	use("tpope/vim-fugitive")
+	-- Bracket manipulation
+	use({
+		"kylechui/nvim-surround",
+		tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+		config = function()
+			require("nvim-surround").setup({
+				-- Configuration here, or leave empty to use defaults
+			})
+		end,
+	})
 
 	-- Honestly cant remember what these do
 	use("hrsh7th/cmp-buffer")
