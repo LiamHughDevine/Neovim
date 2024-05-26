@@ -65,3 +65,7 @@ end)
 
 -- Formatting
 vim.keymap.set("n", "<leader>f", "<cmd>Format<cr>")
+
+-- Navigating tabline
+vim.keymap.set("n", "<leader>]", "<cmd>TablineBufferNext<cr>")
+vim.keymap.set("n", "<leader>[", "<cmd>TablineBufferPrev<cr>")

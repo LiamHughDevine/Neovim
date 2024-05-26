@@ -8,13 +8,7 @@ return require("packer").startup(function(use)
 	use("wbthomason/packer.nvim")
 
 	-- Visuals
-	use({
-		"rmehri01/onenord.nvim",
-		as = "onenord",
-		config = function()
-			vim.cmd("colorscheme onenord")
-		end,
-	})
+	use({ "catppuccin/nvim", as = "catppuccin" })
 	use({
 		"nvim-lualine/lualine.nvim",
 		requires = { "nvim-tree/nvim-web-devicons", opt = true },
