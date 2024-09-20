@@ -16,7 +16,7 @@ stuff for it)
 
 - Run the command:
 
-`Sudo apt-get install build-essential`
+`sudo apt-get install build-essential`
 
 - Create / go to ~/.config and run:
 
@@ -49,3 +49,8 @@ restarting terminal, the download location is a bit weird so you will need to go
 into .bashrc and add:
 
 `export PATH="$PATH:/snap/bin"`
+
+## Windows
+
+For Windows, it may be easiest just to download WSL and get neovim on that. I
+ended up needing to install a C compiler as well.
