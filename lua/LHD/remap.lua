@@ -69,3 +69,6 @@ vim.keymap.set("n", "<leader>f", "<cmd>Format<cr>")
 -- Navigating tabline
 vim.keymap.set("n", "<leader>]", "<cmd>TablineBufferNext<cr>")
 vim.keymap.set("n", "<leader>[", "<cmd>TablineBufferPrev<cr>")
+
+-- Diagnostics
+vim.keymap.set("n", "<leader>dd", "<cmd>lua vim.diagnostic.open_float()<cr>")
