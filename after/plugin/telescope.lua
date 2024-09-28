@@ -12,7 +12,10 @@ require("telescope").setup({
 			"__pycache__",
 			"venv",
 			"env",
-            "images",
+			"images",
+			"jpg",
+			"zip",
+            "pkl",
 		},
 	},
 })
