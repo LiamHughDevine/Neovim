@@ -71,6 +71,14 @@ require("formatter").setup({
 
 		cpp = {
 			require("formatter.filetypes.cpp").clangformat,
+
+			function()
+				return {
+					exe = "clang-format",
+					args = { "-style=\"{IndentWidth: 4}\"" },
+					stdin = true,
+				}
+			end,
 		},
 
 		-- Use the special "*" filetype for defining formatter configurations on
